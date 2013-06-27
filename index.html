@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+  <head>
+    <title>Irregular Histogram</title>
+	<style>
+
+	.svg {
+        font: 10px sans-serif;
+        }
+
+    rect {
+        fill: steelblue;
+        }
+
+    .axis path, .axis line {
+        fill: none;
+        stroke: #000;
+        shape-rendering: crispEdges;
+            }
+
+	button {
+  font: 14px Helvetica Neue;
+  background-color: #222;
+  
+  background-image: -moz-linear-gradient(top, rgba(255,255,255,.25), rgba(255,255,255,.11));
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, rgba(255,255,255,.25)),color-stop(1, rgba(255,255,255,.11)));
+  background-image: -webkit-linear-gradient(rgba(255,255,255,.25), rgba(255,255,255,.11));
+  color: #fff;
+  text-rendering: optimizeLegibility;
+  text-shadow: 0 -1px 1px #222;
+  padding: 6px 10px 6px 10px;
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid #222;
+  margin: 0;
+  -moz-box-shadow: 0 1px 3px #999;
+  -webkit-box-shadow: 0 1px 3px #999;
+  
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  
+  
+}
+	</style>
+	<link rel="stylesheet" type="text/css" media="screen" href="stylesheet.css">
+	<script type="text/javascript" src="d3.v2.js"></script>
+  </head>
+  <body>
+
+  <!-- HEADER -->
+        <div id="header_wrap" class="outer">
+            <header class="inner">
+              <a id="forkme_banner" href="https://github.com/Sushanthece/D3-Irregular-Histogram">View on GitHub</a>
+              <h1 id="project_title">Irregular Histogram</h1> 
+              <a id="home" href="http://sushanthece.github.io/">Home</a>
+           </header>
+        </div>
+    
+  <!-- MAIN CONTENT -->
+        <div>
+          <section id="main_content" class="inner" >   
+			<div>
+			  <div style="width:20%;float:left;display:inline-block" >
+<textarea id="input_data" name="input_data" rows="22" cols="20">
+Income,People
+0,245981
+8.8,150444
+30,126063
+49.9,123519
+70,115029
+90.7,27714
+150.3,353239
+170.2,396008
+190,396725
+210,398640
+230.1,401932
+250,416079
+270,412727
+289.8,385192
+309.7,343178
+329.7,293707
+389.3,165132
+442.3,442075
+543.4,196526
+883.9,48600
+</textarea></br>
+			<button id="render" class="name">render</button>
+			</div>
+			<div id="crimeamap" style="width:78%;float:right;display:inline-block"></div>
+			<script type="text/javascript" src="Irregular_Histogram.js"></script>
+		  </div>
+		</section>
+      </div>
+</body>
+</html>
